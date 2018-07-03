@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  
+
+  .container  
+    .row
+     .col-12-sm-6
+                h2= "ลงทะเบียนเข้าร่วมกิจกรรม"
+                form(action="/register/add", method="post")
+                    .row
+                        .form-group.col-6
+                            label(for="") ชื่อ(ภาษาไทย)
+                            input(type="text", name="tfirstname", class="form-control" )
+                        .form-group.col-6
+                            label(for="") นามสกุล(ภาษาไทย)
+                            input(type="text", name="tlastname", class="form-control" )
+                    .row
+                        .form-group.col-6
+                            label(for="") ชื่อ(ภาษาอังกฤษ)
+                            input(type="text", name="efirstname", class="form-control" )
+                        .form-group.col-6
+                            label(for="") นามสกุล(ภาษาอังกฤษ)
+                            input(type="text", name="elastname", class="form-control" )
+                    .row
+                        .form-group.col-6
+                            label(for="") email
+                            input(type="text", name="email", class="form-control")
+                        .form-group.col-6
+                            label(for="") ชื่อเล่น
+                            input(type="text", name="nick_name", class="form-control" )
+                    .row
+                        .form-group.col-6
+                            label(for="") วันเกิด
+                            input(type="text", name="birthdate", class="form-control" placeholder="ปี-เดือน-วัน ตัวอย่าง 1997-03-25")
+                        .form-group.col-6
+                            label(for="") เบอร์โทรติดต่อ
+                            input(type="text", name="tel", class="form-control" )
+                    .row
+                        .form-group.col-12
+                            label(for="") สถานภาพการศึกษา
+                            select(name="status_student", class="form-control")
+                                option(value="yes") นักเรียน/นักศึกษา
+                                option(value="no") บุคคลทั่วไป
+                    
+                    .row
+                        .form-group.col-12
+                            label(for="") สถาบัน/โรงเรียน/มหาลัย (กรณีเป็นนักศึกษาหรือจบการศึกษา)
+                            input(type="text", name="university", class="form-control")
+
+                    .row
+                        .form-group.col-12
+                            label(for="") คณะ/วิทยาลัย/สาขาวิชา (กรณีเป็นนักศึกษาหรือจบการศึกษา)
+                            input(type="text", name="faculty", class="form-control")
+                    .row
+                        .form-group.col-6
+                            label(for="") สถานภาพการศึกษา
+                            select(name="level_study", class="form-control")
+                                option(value="1") ปี 1
+                                option(value="2") ปี 2
+                                option(value="3") ปี 3
+                                option(value="4") ปี 4
+                        .form-group.col-6
+                            label(for="") facebook
+                            input(type="text", name="facebook", class="form-control" )
+                    .row
+                        .form-group.col-6
+                            label(for="") Line
+                            input(type="text", name="line", class="form-control" )
+                        .form-group.col-6
+                            label(for="") ที่อยู่
+                            <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        
+                    .row
+                        .form-group.col-6
+                            button(type="submit").btn.btn-block.btn-success เพิ่ม
+                        .form-group.col-6
+                            button(type="reset").btn.btn-block.btn-warning RESET  
+    
