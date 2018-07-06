@@ -11,6 +11,10 @@ export class Event {
       title	:string
     @Column()
       start_date:Date
+   @Column("text")
+      content:string
+      @Column("text")
+      description:string
     @Column()
       end_date:Date
     @Column()	

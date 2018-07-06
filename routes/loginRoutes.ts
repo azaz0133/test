@@ -15,7 +15,7 @@ router.post('/',(req,res)=>{
        let password = req.body.password
        const hash = crypto.createHmac('sha512', password)
                     .update('tfosettal')
-                   .digest('hex');
+                    .digest('hex');
         if(username&&password){
             connect.then(async connection =>{
                 let userRepo = getRepository(User)
@@ -47,7 +47,7 @@ router.post('/',(req,res)=>{
                     //console.log("sssssssss")
                     res.status(200).json({
                         status : "OK",
-                        status_login : "login complete"
+                        status_login : "login complete",
                     })
                 }
                 else {

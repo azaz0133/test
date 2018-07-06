@@ -42,6 +42,8 @@ router.post('/',(req,res)=>{
   event.regis_start_day= new Date(body.regis_start_day) 
   event.regis_end_day= new Date(body.regis_end_day)
   event.cover_image= body.cover_image
+  event.description = body.description
+  event.content = body.content
     await connection.manager.save(event);
   })
 })
