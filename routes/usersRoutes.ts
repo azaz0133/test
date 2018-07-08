@@ -44,8 +44,7 @@ router.post('/',(req,res)=>{
   connect.then(async connection => {
     let {body} = req;
     let check = [
-      "firstname","lastname","gender","age","email","birthdate","tel","university"
-      ,"educationStatus","eduYear","username","password"
+      "firstname","lastname","email","password"
     ]
     let count =0;
     let i=check.length-1;
@@ -58,19 +57,7 @@ router.post('/',(req,res)=>{
     const user = new User();
     user.firstName=req.body.firstname
     user.lastName=req.body.lastname
-    user.gender=req.body.gender
-    user.age=req.body.age
-    user.status=req.body.status
     user.email=req.body.email
-    user.birthdate=new Date(req.body.birthdate)
-    user.tel=req.body.tel
-    user.university=req.body.university
-    user.faculty=req.body.faculty
-    user.major=req.body.major
-    user.facebook=req.body.facebook
-    user.education_status=req.body.educationStatus
-    user.edu_year=req.body.eduYear
-    user.username=req.body.username
         const password = req.body.password
         const hash = crypto.createHmac('sha512', password)
                     .update('tfosettal')
