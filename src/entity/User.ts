@@ -14,43 +14,43 @@ export class User {
     @Column()
     lastName: string;
 
-    @Column()
+    @Column({ nullable: true })
     gender: string;
 
-    @Column()
+    @Column({ nullable: true })
     age: number;
 
     @Column()
     email: string;
 
-    @Column()
+    @Column({ nullable: true })
     birthdate: Date;
 
-    @Column()
+    @Column({ nullable: true })
     status: number;
 
-    @Column()
+    @Column({ nullable: true })
     tel: string;
 
-    @Column()
+    @Column({ nullable: true })
     university:string
     
-    @Column()
+    @Column({ nullable: true })
     faculty: string;
 
-    @Column()
+    @Column({ nullable: true })
     major: string;
 
-    @Column()
+    @Column({ nullable: true })
     facebook: string;
 
-    @Column()
+    @Column({ nullable: true })
     education_status: boolean;
 
-    @Column()
+    @Column({ nullable: true })
     edu_year: string;
 
-    @Column()
+    @Column({ nullable: true })
     username: string;
 
     @Column("text")
