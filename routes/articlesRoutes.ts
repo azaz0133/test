@@ -26,6 +26,7 @@ router.get('/show', function(req, res, next) {
   })
   //testsakosakasffas
 //get by ..
+// asdasdsadsasddasdas
 router.get('/:id',(req,res)=>{
   con.then(async c=>{
     const articleRep
