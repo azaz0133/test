@@ -29,9 +29,8 @@ router.get('/show', function(req, res, next) {
 router.get('/:id',(req,res)=>{
   con.then(async c=>{
     const articleRepository = getRepository(Article);
-  await articleRepository.find({where:req.params.id}).then(data=>{
-    console.log(data)
-    if(articleRepository!==undefined){
+  await articd){
+    asklaslkads
       res.status(200).json(data);
     }
     else {
