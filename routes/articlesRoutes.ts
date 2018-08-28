@@ -24,6 +24,7 @@ router.get('/show', function(req, res, next) {
     
   })
   })
+  //testsakosakasffas
 //get by ..
 router.get('/:id',(req,res)=>{
   con.then(async c=>{
