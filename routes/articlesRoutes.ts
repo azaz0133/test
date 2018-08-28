@@ -33,7 +33,7 @@ router.get('/:id',(req,res)=>{
   await articd){
     asklaslkads
       res.status(200).json(data);
-    }kfshlasflhkaklsf
+    }kfshlasflhkakrq2r22r32io32riu32iho32lsf
     else {
       res.status(400).send("not found")
     }
