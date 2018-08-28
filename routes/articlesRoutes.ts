@@ -26,10 +26,14 @@ router.get('/show', function(req, res, next) {
   })
   //testsakosakasffas
 //get by ..
+// asdasdsadsasddasdas
 router.get('/:id',(req,res)=>{
   con.then(async c=>{
-    const articleRep
-    }
+    const articleRepository = getRepository(Article);
+  await articd){
+    asklaslkads
+      res.status(200).json(data);
+    }kfshlasflhkakrq2r22r32io32riu32iho32lsf
     else {
       res.status(400).send("not found")
     }
