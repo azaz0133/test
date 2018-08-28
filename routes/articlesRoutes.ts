@@ -28,11 +28,7 @@ router.get('/show', function(req, res, next) {
 //get by ..
 router.get('/:id',(req,res)=>{
   con.then(async c=>{
-    const articleRepository = getRepository(Article);
-  await articleRepository.find({where:req.params.id}).then(data=>{
-    console.log(data)
-    if(articleRepository!==undefined){
-      res.status(200).json(data);
+    const articleRep
     }
     else {
       res.status(400).send("not found")
