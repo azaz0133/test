@@ -29,7 +29,10 @@ router.get('/show', function(req, res, next) {
 // asdasdsadsasddasdas
 router.get('/:id',(req,res)=>{
   con.then(async c=>{
-    const articleRep
+    const articleRepository = getRepository(Article);
+  await articd){
+    asklaslkads
+      res.status(200).json(data);
     }
     else {
       res.status(400).send("not found")
